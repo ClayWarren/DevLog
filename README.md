@@ -117,5 +117,3 @@ If you find DevLog useful (or just love the idea), starring the repo helps more 
 ---
 
 **License:** MIT
-
-```
