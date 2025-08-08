@@ -1,0 +1,2 @@
+# devlog
+Automatic Developer Journal
