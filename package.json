@@ -1,0 +1,22 @@
+{
+  "name": "devlog",
+  "version": "1.0.0",
+  "description": "Generate a daily changelog from your git commits",
+  "main": "dist/index.js",
+  "bin": {
+    "devlog": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts"
+  },
+  "keywords": ["git", "cli", "changelog", "devlog"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
+  }
+}
