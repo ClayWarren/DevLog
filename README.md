@@ -50,7 +50,7 @@ Run inside any Git repository:
 * Using `npx` (without installing globally):
 
 ```bash
-npx @claywarren/devlog
+npx devlog
 ```
 
 * Or, after installing globally:
