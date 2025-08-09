@@ -1,4 +1,13 @@
 ## 2025-08-08
+- 1.0.1
+- update package.json
+- platforms supported
+- update readme
+- Npm packaging
+- Delete demo.tape
+- update
+- Create demo.gif
+- Bug Fixes
 - Create demo.tape
 - Update README.md
 - Update README.md
