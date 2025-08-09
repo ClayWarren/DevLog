@@ -1,4 +1,6 @@
-# devlog 🗒️
+# 🗒️ DevLog - Automatic Developer Journal
+
+**“Ever forget what you worked on yesterday? DevLog remembers — so you don’t have to.”**
 Generate a **daily changelog** from your Git commit history — automatically grouped by date and written to `DEVLOG.md`.
 
 ![Demo](demo.gif)
