@@ -1,17 +1,22 @@
-# 📝 DevLog — Automatic Developer Journal
+# devlog 🗒️  
+Generate a **daily changelog** from your Git commit history — automatically grouped by date and written to `DEVLOG.md`.  
 
-> **“Ever forget what you worked on yesterday? DevLog remembers — so you don’t have to.”**  
-> Tracks your git commits + terminal commands for the day and saves them in a clean Markdown log.  
-> Perfect for progress tracking, daily stand-ups, and portfolios.
-
----
-
-## 🚀 Demo
-
-![DevLog Demo](demo.gif)  
-<sub>(record with [asciinema](https://asciinema.org/) or [vhs](https://github.com/charmbracelet/vhs))</sub>
+## Features
+- 📅 Groups commits by day  
+- 📝 Outputs clean, shareable Markdown  
+- ⚡ Runs instantly via CLI (`npx devlog`)  
+- 💻 Zero configuration — works in any Git repo  
 
 ---
+
+## Installation
+
+### Option 1 — Local Dev
+```bash
+git clone https://github.com/yourusername/devlog.git
+cd devlog
+npm install
+npm run build
 
 ## ✨ Features
 ✅ **Zero setup** — runs instantly  
@@ -22,98 +27,55 @@
 
 ---
 
-## 📦 Install
+Option 2 — Global Install
+bash
+Copy
+Edit
+npm install -g devlog
+Usage
+Run inside any Git repository:
 
-```bash
-# Clone the repo
-git clone https://github.com/YOUR-USERNAME/devlog.git
-cd devlog
+bash
+Copy
+Edit
+npx devlog
+This will generate or update a file:
 
-# Make it executable
-chmod +x devlog.py
+markdown
+Copy
+Edit
+## 2025-08-08
+- feat: add login form
+- fix: crash on settings save
+- docs: update API usage
+How It Works
+Runs git log to get commit history.
 
-# Run
-./devlog.py
-````
+Groups commits by commit date.
 
-> 💡 Coming soon: `pipx install devlog` for one-command global install.
+Writes them to DEVLOG.md in reverse chronological order.
 
----
+Example
+bash
+Copy
+Edit
+$ npx devlog
+✅ DEVLOG.md updated!
+Output in DEVLOG.md:
 
-## 🛠 Usage
+markdown
+Copy
+Edit
+## 2025-08-08
+- feat: add login form
+- fix: crash on settings save
+- docs: update API usage
+Planned Features
+🔹 Emoji mapping for commit types (feat → 🎯, fix → 🐛, docs → 📝)
 
-```bash
-./devlog.py
-```
+🔹 Filtering by branch or tag
 
-Generates a file like:
+🔹 GitHub Action for automatic updates
 
-```markdown
-# DevLog — 2025-08-08
-
-## Summary
-_Add your notes or AI summary here_
-
-## Git Commits
-### myproject
-- a12bc34 feat(auth): implement JWT-based login
-- b56de78 fix(docker): use multi-stage build to reduce image size
-
-## Shell Commands
-- `npm install jsonwebtoken`
-- `docker build . --no-cache`
-- `git push origin feature/auth`
-```
-
----
-
-## 📂 Where Logs Are Saved
-
-All logs are stored in:
-
-```
-~/DevLogs/
-```
-
----
-
-## 🗺 Roadmap
-
-* [ ] AI-powered daily summaries
-* [ ] Notion/Obsidian sync
-* [ ] Retro mode (generate logs from past X days)
-* [ ] GitHub Action to auto-comment PR summaries
-* [ ] Configurable exclusions for shell commands
-
----
-
-## 🔍 Competitors
-
-We’ve looked at existing tools like:
-
-* **automoto/devlog** (manual CLI logging, Go-based)
-* **mihael/devlog** (session-based Ruby logging)
-* **DEVLOG AI** (manual web journaling)
-* **Developer Journal** (closed-source SaaS requiring commit tags)
-
-**Why DevLog is different:**
-
-* **Automatic capture** of both git commits & shell commands
-* **Zero effort** — just run `devlog` and get your log
-* **Local, open-source, and private by default**
-
----
-
-## 🤝 Contributing
-
-Pull requests welcome! If you have ideas for features or integrations, open an issue.
-
----
-
-## ⭐ Why Star This Repo?
-
-If you find DevLog useful (or just love the idea), starring the repo helps more developers discover it. 🌟
-
----
-
-**License:** MIT
+License
+MIT © 2025 Your Name
