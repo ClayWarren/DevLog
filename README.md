@@ -1,6 +1,7 @@
 # devlog 🗒️
 Generate a **daily changelog** from your Git commit history — automatically grouped by date and written to `DEVLOG.md`.
 
+![Demo](demo.gif)
 
 ---
 
