@@ -9,78 +9,93 @@ Generate a **daily changelog** from your Git commit history — automatically gr
 ---
 
 ## ✨ Features
-- 📅 Groups commits by day
-- 📝 Outputs clean, shareable Markdown
-- ⚡ Runs instantly via CLI (`npx @claywarren/devlog`)
-- 💻 Zero configuration — works in any Git repo
+- 📅 Groups commits by day  
+- 📝 Outputs clean, shareable Markdown  
+- ⚡ Runs instantly via CLI (`npx @claywarren/devlog`)  
+- 💻 Zero configuration — works in any Git repo  
 
 ---
 
 ## 🚀 Installation
 
 ### Option 1 — Local Dev
+
 ```bash
 git clone https://github.com/claywarren/devlog.git
 cd devlog
 npm install
 npm run build
-Option 2 — Global Install
-bash
-Copy
-Edit
-npm install -g @claywarren/devlog 
-🖥 Supported Platforms
-macOS — fully supported (tested)
+````
 
-Linux — testing in progress
+### Option 2 — Global Install
 
-Windows — testing in progress
+```bash
+npm install -g @claywarren/devlog
+```
 
-📦 Usage
+---
+
+## 🖥 Supported Platforms
+
+* macOS — fully supported (tested)
+* Linux — testing in progress
+* Windows — testing in progress
+
+---
+
+## 📦 Usage
+
 Run inside any Git repository:
 
-Using npx (without installing globally):
+* Using `npx` (without installing globally):
 
-bash
-Copy
-Edit
+```bash
 npx @claywarren/devlog
-Or, after installing globally:
+```
 
-bash
-Copy
-Edit
+* Or, after installing globally:
+
+```bash
 devlog
+```
+
 This will generate or update a file:
 
-markdown
-Copy
-Edit
+```markdown
 ## 2025-08-08
 - feat: add login form
 - fix: crash on settings save
 - docs: update API usage
-⚙️ How It Works
-Runs git log to get commit history.
+```
 
-Groups commits by commit date.
+---
 
-Writes them to DEVLOG.md in reverse chronological order.
+## ⚙️ How It Works
 
-🖥 Example
-bash
-Copy
-Edit
+1. Runs `git log` to get commit history.
+2. Groups commits by commit date.
+3. Writes them to `DEVLOG.md` in reverse chronological order.
+
+---
+
+## 🖥 Example
+
+```bash
 $ npx devlog
 ✅ DEVLOG.md updated!
-Output in DEVLOG.md:
+```
 
-markdown
-Copy
-Edit
+Output in `DEVLOG.md`:
+
+```markdown
 ## 2025-08-08
 - feat: add login form
 - fix: crash on settings save
 - docs: update API usage
-📜 License
+```
+
+---
+
+## 📜 License
+
 MIT © 2025 Clay Warren
