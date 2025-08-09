@@ -35,11 +35,11 @@ npm install -g @claywarren/devlog
 
 ---
 
-## 🖥 Supported Platforms
+## 🖥 Supported Platforms (tested)
 
-* macOS — fully supported (tested)
-* Linux — testing in progress
-* Windows — testing in progress
+* macOS 
+* Linux 
+* Windows
 
 ---
 
