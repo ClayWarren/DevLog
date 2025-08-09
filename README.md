@@ -26,7 +26,7 @@ npm run build
 ### Option 2 — Global Install
 
 ```bash
-npm install -g @claywarren/devlog --registry=https://npm.pkg.github.com
+npm install -g @claywarren/devlog 
 ```
 
 ---
