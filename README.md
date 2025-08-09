@@ -24,68 +24,63 @@ git clone https://github.com/claywarren/devlog.git
 cd devlog
 npm install
 npm run build
-````
-
-### Option 2 — Global Install
-
-```bash
+Option 2 — Global Install
+bash
+Copy
+Edit
 npm install -g @claywarren/devlog 
-```
+🖥 Supported Platforms
+macOS — fully supported (tested)
 
----
+Linux — testing in progress
 
-## 🖥 Supported Platforms
+Windows — testing in progress
 
-- macOS — fully supported (tested)  
-- Linux — testing in progress  
-- Windows — testing in progress  
-
-
-## 📦 Usage
-
+📦 Usage
 Run inside any Git repository:
 
-```bash
-npx @claywarren/devlog
-```
+Using npx (without installing globally):
 
+bash
+Copy
+Edit
+npx @claywarren/devlog
+Or, after installing globally:
+
+bash
+Copy
+Edit
+devlog
 This will generate or update a file:
 
-```markdown
+markdown
+Copy
+Edit
 ## 2025-08-08
 - feat: add login form
 - fix: crash on settings save
 - docs: update API usage
-```
+⚙️ How It Works
+Runs git log to get commit history.
 
----
+Groups commits by commit date.
 
-## ⚙️ How It Works
+Writes them to DEVLOG.md in reverse chronological order.
 
-1. Runs `git log` to get commit history.
-2. Groups commits by commit date.
-3. Writes them to `DEVLOG.md` in reverse chronological order.
-
----
-
-## 🖥 Example
-
-```bash
+🖥 Example
+bash
+Copy
+Edit
 $ npx devlog
 ✅ DEVLOG.md updated!
-```
+Output in DEVLOG.md:
 
-Output in `DEVLOG.md`:
-
-```markdown
+markdown
+Copy
+Edit
 ## 2025-08-08
 - feat: add login form
 - fix: crash on settings save
 - docs: update API usage
-```
-
----
-
-## 📜 License
-
+📜 License
 MIT © 2025 Clay Warren
