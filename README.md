@@ -8,7 +8,7 @@ Generate a **daily changelog** from your Git commit history — automatically gr
 ## ✨ Features
 - 📅 Groups commits by day
 - 📝 Outputs clean, shareable Markdown
-- ⚡ Runs instantly via CLI (`npx devlog`)
+- ⚡ Runs instantly via CLI (`npx @claywarren/devlog`)
 - 💻 Zero configuration — works in any Git repo
 
 ---
@@ -17,7 +17,7 @@ Generate a **daily changelog** from your Git commit history — automatically gr
 
 ### Option 1 — Local Dev
 ```bash
-git clone https://github.com/yourusername/devlog.git
+git clone https://github.com/claywarren/devlog.git
 cd devlog
 npm install
 npm run build
@@ -26,7 +26,7 @@ npm run build
 ### Option 2 — Global Install
 
 ```bash
-npm install -g devlog
+npm install -g @claywarren/devlog --registry=https://npm.pkg.github.com
 ```
 
 ---
@@ -36,7 +36,7 @@ npm install -g devlog
 Run inside any Git repository:
 
 ```bash
-npx devlog
+npx @claywarren/devlog
 ```
 
 This will generate or update a file:
