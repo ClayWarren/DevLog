@@ -1,6 +1,6 @@
 {
   "name": "@claywarren/devlog",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generate a daily changelog from your git commits",
   "main": "dist/index.js",
   "bin": {
