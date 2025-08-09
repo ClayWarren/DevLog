@@ -31,6 +31,13 @@ npm install -g @claywarren/devlog --registry=https://npm.pkg.github.com
 
 ---
 
+## 🖥 Supported Platforms
+
+- macOS — fully supported (tested)  
+- Linux — testing in progress  
+- Windows — testing in progress  
+
+
 ## 📦 Usage
 
 Run inside any Git repository:
